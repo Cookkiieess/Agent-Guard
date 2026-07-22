@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python bytecode/cache
+__pycache__/
+*.pyc
+
+# Packaging artifacts
+*.egg-info/
+build/
+dist/
+
+# Generated logs (test output, not source)
+audit.jsonl
+*.jsonl
+
+# Editor/OS clutter
+.vscode/
+.DS_Store

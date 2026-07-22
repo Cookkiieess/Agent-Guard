@@ -1,0 +1,16 @@
+[project]
+name = "agentguard"
+version = "0.1.0"
+description = "MCP-based policy enforcement proxy for AI agent tool calls"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "pyyaml",
+]
+
+[project.scripts]
+agentguard = "agentguard.cli:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
