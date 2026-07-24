@@ -1,0 +1,3 @@
+default: block
+safe: allow
+dangerous: block
