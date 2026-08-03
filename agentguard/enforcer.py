@@ -1,4 +1,4 @@
-from .policy import get_action, load_policy
+from .policy import get_action
 from .classifier import classify
 
 def enforce(prompt, policy_data):
