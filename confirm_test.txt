@@ -1,0 +1,4 @@
+{"jsonrpc": "2.0", "id": 0, "method": "initialize", "params": {"protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": {"name": "test-client", "version": "1.0"}}}
+{"jsonrpc": "2.0", "method": "notifications/initialized"}
+{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "quantum_flux_capacitor", "arguments": {"target": "unknown"}}}
+{"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": "quantum_flux_capacitor_v2", "arguments": {"target": ".env"}}}
