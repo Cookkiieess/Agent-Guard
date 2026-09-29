@@ -3,6 +3,7 @@ import json
 import sys
 
 from .proxy import run_proxy
+from .paths import pending_path, response_path
 
 def main():
     parser = argparse.ArgumentParser(description="AgentGuard CLI")
@@ -25,7 +26,7 @@ def main():
 def confirm_command():
 
     # Write the decision to a file for the proxy to read
-    with open("pending_confirmation.json", "r", encoding="utf-8-sig") as f:
+    with open(pending_path(), "r", encoding="utf-8-sig") as f:
         pending_confirmation = json.load(f)
 
     while True:
@@ -47,7 +48,7 @@ def confirm_command():
                 }
             break
 
-    with open("response.json", "w", encoding="utf-8-sig") as f:
+    with open(response_path(), "w", encoding="utf-8-sig") as f:
         json.dump(response_file, f)
 
 if __name__ == "__main__":
